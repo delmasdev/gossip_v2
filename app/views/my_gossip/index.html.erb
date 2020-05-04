@@ -1,0 +1,10 @@
+<center>
+  <br/><br/>
+  <h1>Bienvenue, connecte toi si tu veux voir les Gossips</h1>
+    <form action='/index' method="POST">
+      Saisi ici ton prénom :<br/>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="text" name="first_name"/><br/><br/>
+      <input type="submit" name="Envoyer"/>
+    </form>
+</center>

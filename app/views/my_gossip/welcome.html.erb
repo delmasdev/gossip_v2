@@ -1,0 +1,16 @@
+<center>
+  <br/><br/>
+  <h2>BIENVENUE <%= @user %>  ! Ici c'est notre super site de potins, il est chouette, non ? </h2>
+  <% x = 0 %>
+  <div class="card-columns mx-2">
+    <%while x < 12%>
+    <div class="card border-primary mb-2 bg-light">
+      <div class="card-body">
+        <h5 class="card-title">  <%= @array_gossip[x].user.first_name %></h5>
+        <h4 class="card-text">    <%= link_to "#{@array_gossip[x].title}", my_gossip_gossip_id_path(x) %></h4>
+      </div>
+    </div>
+    <% x += 1 %>
+    <% end %>
+  </div>
+</center>

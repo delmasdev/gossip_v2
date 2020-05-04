@@ -1,0 +1,17 @@
+<div class='container'>
+  <center><h1>Page de présentation de <%=@array_user[params['author'].to_i].first_name %></h1>
+  <br>
+    <div>
+      <p>
+        <u>Prénom</u>: <%= @array_user[params['author'].to_i].first_name %><br>
+        <u>Nom</u>: #Pas encore d'infos<br>
+        <u>Age</u>: #Pas encore d'infos<br>
+        <u>Email</u>: #Pas encore d'infos<br>
+      </p>
+    </div>
+
+  <p>
+    <%= link_to "Retour à la page du gossip", :back%>
+  </p>
+  </center>
+</div>
